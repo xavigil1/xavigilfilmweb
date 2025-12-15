@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "about": "소개",
+    "portfolio": "포트폴리오",
+    "insights": "인사이트",
+    "collaborate": "협업하기"
+  },
+  "hero": {
+    "title": "XAVIGIL FILM",
+    "subtitle": "글로벌 인플루언서 • K-패션 • 한국 여행 • 라이프스타일",
+    "cta": "함께 작업하기"
+  },
+  "section": {
+    "portfolio": {
+      "title": "내 작업: 이야기가 펼쳐지는 곳"
+    },
+    "awards": {
+      "title": "🏅 국제 수상 및 인정"
+    }
+  },
+  "who":{
+    "title":"XAVIGIL FILM은 누구인가요?",
+    "p1":"Xavigil Film은 단순한 이름이 아니라 한국의 활기찬 에너지가 녹아 있는 글로벌 서사입니다. 저는 프랑코 길(Franco Gil), Xavi 또는 Xavier로 더 잘 알려진 국제 인플루언서로서 패션, 여행 및 한국 라이프스타일을 통해 문화를 연결하는 데 열정을 가지고 있습니다. 서울의 런웨이부터 문화의 가장 진정한 장소들까지, 제 사명은 영감을 주고 비전 있는 브랜드와 전 세계 관객을 잇는 콘텐츠를 만드는 것입니다.",
+    "p2":"한국 시장에 대한 깊은 이해와 영화적 미감을 바탕으로, 저는 스토리를 강렬한 시각적 경험으로 전환합니다. 아시아 중심에서 진정성 있게 공감하고자 하는 브랜드와 협업합니다. 당신의 이야기를 함께하실까요?"
+  },
+  "brands":{
+    "title":"선도 브랜드들의 신뢰",
+    "p":"한국 및 글로벌 시장에서 영향력 있는 협업을 위해."
+  },
+  "portfolio":{
+    "description":"K-뷰티, K-패션, 여행, 라이프스타일을 아우르는 선택된 시네마틱 프로젝트 모음입니다.",
+    "kfashion": { "title":"K-패션 프로젝트" },
+    "kbeauty": { "title":"K-뷰티 캠페인" }
+  },
+  "awards":{
+    "lead":"K-인플루언서이자 콘텐츠 크리에이터로서 제 작업은 전 세계적으로 인정받아 왔으며, 한국 관련 콘텐츠 제작의 문화적 연결과 우수성을 강조합니다.",
+    "li1":"<strong>Minister of Culture, Sports and Tourism of Korea Award (2025):</strong> 한국 문화체육관광부 수상",
+    "li2":"<strong>Best K-Influencer (2025):</strong> 한국 문화체육관광부가 수여",
+    "li3":"<strong>4th Place Talk Talk Korea Photobook Category (2025):</strong> Talk Talk Korea 2025 콘테스트 4위",
+    "li4":"<strong>Semifinalist of the PEPERO AGENT:P Project (2025):</strong> 롯데 페페로 글로벌 브랜드 프로젝트 홍보대사 선정",
+    "li5":"<strong>Best K-Influencer (2023):</strong> KOCIS(한국문화정보원) 수여",
+    "li6":"<strong>4th Place Talk Talk Korea K-Fashion Category (2023):</strong> Talk Talk Korea 2023 콘테스트 4위",
+    "li7":"<strong>Award Medal to Educators well received for the activities of the K-Influencer Academy (2022):</strong> K-인플루언서 아카데미 운영진이 수여",
+    "final_note":"이러한 수상들은 제 프로젝트를 통해 문화적 교량을 계속 만들도록 하는 원동력입니다.",
+    "caption":"한국에서의 수상 및 주요 행사 장면들."
+  },
+  "videos":{
+    "title":"멀티플랫폼 크리에이터",
+    "p":"Instagram, TikTok, YouTube 전반에서 스토리를 구현합니다."
+  },
+  "reels":{
+    "title":"바이럴 콘텐츠 쇼케이스",
+    "p":"K-패션, K-뷰티, 여행의 최신 콘텐츠를 제 소셜 채널에서 바로 확인하세요."
+  },
+  "insights":{
+    "title":"오디언스 인사이트: 글로벌 연결",
+    "p":"제 커뮤니티는 Xavigil Film의 핵심이며, 한국 및 글로벌 시장에 영향력을 행사하도록 전략적으로 위치해 있습니다."
+  },
+  "services":{
+    "title":"서비스: 브랜드 스토리 강화",
+    "p":"노출을 넘어, 타깃 오디언스에 공감할 수 있는 창의적이고 전략적인 솔루션을 제공합니다.",
+    "card1":{ "title":"UGC & 디지털 캠페인", "p":"참여도와 전환을 촉진하는 진정성 있는 UGC 콘텐츠." },
+    "card2":{ "title":"K-패션 & K-뷰티", "p":"패션 에디토리얼부터 스킨케어 출시까지, 시장 이해를 바탕으로 한 구현." },
+    "card3":{ "title":"전략 & SEO", "p":"오디언스 분석, 시장 컨설팅 및 YouTube SEO 최적화." },
+    "card4":{ "title":"시네마틱 제작", "p":"프리미엄 미학의 고품질 비디오 및 사진 제작." }
+  },
+  "testimonials":{
+    "title":"브랜드들이 말하는 XAVIGIL FILM",
+    "p1":"\"Xavier Gil과의 협업은 매우 만족스러운 경험이었습니다. 그의 창의성과 독창적인 비전은 MIXSOON의 철학과 우리의 스킨케어 제품을 탁월하게 잘 표현해 주었습니다. 그가 만든 콘텐츠는 기대를 뛰어넘어 '글라스 스킨(유리 피부)' 효과를 얻는 방법을 관객에게 보여주었습니다. 결과와 반응에 매우 만족합니다.\"",
+    "p2":"\"Xavier Gil과의 협업에 깊은 감사를 표합니다. 그와 함께 일하는 것은 큰 기쁨이었고 결과에 매우 만족합니다. 그의 작업은 스킨케어에 대한 진정한 열정을 반영합니다. 앞으로도 함께 일할 기회를 기대합니다!\""
+  },
+  "contact":{
+    "title":"함께 특별한 것을 만들어봅시다",
+    "name_placeholder":"이름",
+    "email_placeholder":"이메일",
+    "company_placeholder":"브랜드 / 회사",
+    "message_placeholder":"메시지를 입력하세요...",
+    "send":"문의 보내기",
+    "intro":"한국 및 글로벌 시장에서 브랜드를 확장할 준비가 되셨나요? 아이디어를 공유해주세요. 시네마틱 콘텐츠와 인플루언서 전략으로 여러분의 비전을 확장할 수 있길 기대합니다.",
+    "social_text":"연결하기:",
+    "final_phrase":"서울에서 만나요!"
+  },
+  "footer":{
+    "copyright":"© 2025 Xavigil Film. All rights reserved. Designed with K-Aesthetic."
+  }
+}

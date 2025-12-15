@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "portfolio": "Portafolio",
+    "insights": "Insights",
+    "collaborate": "Colaborar"
+  },
+  "hero": {
+    "title": "XAVIGIL FILM",
+    "subtitle": "INFLUENCER GLOBAL • K-FASHION • TRAVEL KOREA • LIFESTYLE",
+    "cta": "Colabora conmigo"
+  },
+  "section": {
+    "portfolio": {
+      "title": "MI TRABAJO: DONDE SE DESARROLLAN LAS HISTORIAS"
+    },
+    "awards": {
+      "title": "🏅 RECONOCIMIENTOS Y PREMIOS INTERNACIONALES"
+    }
+  },
+  "who":{
+    "title":"¿QUIÉN ES XAVIGIL FILM?",
+    "p1":"Xavigil Film es más que un nombre; es una narrativa global tejida con la vibrante energía de Corea del Sur. Soy Franco Gil, mejor conocido como Xavi o Xavier, un influencer internacional con una pasión inquebrantable por conectar culturas a través de la moda, los viajes y el estilo de vida coreanos. Desde las pasarelas de Seúl hasta los rincones más auténticos de su cultura, mi misión es crear contenido que no solo inspire, sino que también construya puentes entre marcas visionarias y una audiencia global cautivada por la ola Hallyu.",
+    "p2":"Con un profundo conocimiento del mercado coreano y una gran sensibilidad para la estética cinematográfica, transformo historias en experiencias visuales impactantes, colaborando con marcas que buscan conectar con autenticidad en el corazón de Asia y más allá. ¿Listo para contar tu historia?"
+  },
+  "brands":{
+    "title":"CON LA CONFIANZA DE LAS MARCAS LÍDERES",
+    "p":"Para colaboraciones impactantes en los mercados coreano y global."
+  },
+  "portfolio":{
+    "description":"Una selección curada de proyectos cinematográficos sobre K-beauty, K-fashion, viajes y estilo de vida.",
+    "kfashion": { "title":"PROYECTOS K-FASHION" },
+    "kbeauty": { "title":"CAMPAÑAS K-BEAUTY" }
+  },
+  "awards":{
+    "lead":"Mi trabajo como K-Influencer y creador de contenido ha sido reconocido a nivel global, destacando la conexión cultural y la excelencia en la producción de contenido sobre Corea.",
+    "li1":"<strong>Minister of Culture, Sports and Tourism of Korea Award (2025):</strong> Otorgado por el Ministerio de Cultura, Deportes y Turismo de Corea",
+    "li2":"<strong>Best K-Influencer (2025):</strong> Premio otorgado por el Ministerio de Cultura, Deportes y Turismo de Corea",
+    "li3":"<strong>4th Place Talk Talk Korea Photobook Category (2025):</strong> Concurso Talk Talk Korea 2025.",
+    "li4":"<strong>Semifinalist of the PEPERO AGENT:P Project (2025):</strong> Embajador del Proyecto de Marca Global Lotte Pepero.",
+    "li5":"<strong>Best K-Influencer (2023):</strong> Premio otorgado por el Servicio de Información y Cultura de Corea (KOCIS).",
+    "li6":"<strong>4th Place Talk Talk Korea K-Fashion Category (2023):</strong> Concurso Talk Talk Korea 2023.",
+    "li7":"<strong>Award Medal to Educators well received for the activities of the K-Influencer Academy (2022):</strong> Otorgado por los directivos de K-influencer Academy.",
+    "final_note":"Estos reconocimientos son el motor para seguir creando puentes entre culturas a través de mis proyectos.",
+    "caption":"Momentos clave de premiaciones y eventos en Corea del Sur."
+  },
+  "videos":{
+    "title":"CREADOR MULTIPLATAFORMA",
+    "p":"Dando vida a las historias en Instagram, TikTok y YouTube."
+  },
+  "reels":{
+    "title":"VITRINA DE CONTENIDO VIRAL",
+    "p":"Lo más reciente en K-Fashion, K-Beauty y Travel, directamente de mis redes."
+  },
+  "insights":{
+    "title":"INSIGHTS DE AUDIENCIA: CONECTANDO GLOBALMENTE",
+    "p":"Mi comunidad es el corazón de Xavigil Film. Estratégicamente posicionada para impactar en el mercado coreano y global."
+  },
+  "services":{
+    "title":"SERVICIOS: ELEVANDO LA HISTORIA DE SU MARCA",
+    "p":"Más allá de la exposición, ofrezco soluciones creativas y estratégicas diseñadas para resonar con su público objetivo.",
+    "card1":{ "title":"UGC & Campañas Digitales", "p":"Contenido auténtico y de alto impacto (User Generated Content) que impulsa la interacción y las conversiones en todas las plataformas." },
+    "card2":{ "title":"K-Fashion & K-Beauty", "p":"Desde editoriales de moda hasta lanzamientos de productos de cuidado de la piel, con un toque distintivo y entendimiento del mercado coreano." },
+    "card3":{ "title":"Estrategia & SEO", "p":"Análisis de audiencia, consultoría de mercado y optimización SEO en YouTube para maximizar la visibilidad y el alcance del contenido." },
+    "card4":{ "title":"Producción Cinematográfica", "p":"Creación de videos y fotografía de alta calidad con estética premium, ideal para embajadas de marca y lanzamientos." }
+  },
+  "testimonials":{
+    "title":"QUÉ DICEN LAS MARCAS SOBRE XAVIGIL FILM",
+    "p1":"\"Trabajar con Xavier Gil fue una experiencia muy gratificante. Su creatividad y visión única lograron presentar la filosofía de MIXSOON y nuestros productos de Skincare de manera excepcional. El contenido que creó no solo cumplió, sino que superó nuestras expectativas, mostrando a su audiencia cómo alcanzar el codiciado efecto de 'piel de cristal'. Estamos encantados con la acogida y el resultado final.\"",
+    "p2":"\"Apreciamos profundamente la colaboración con Xavier Gil. Ha sido un placer trabajar con él y estamos muy satisfechos con el resultado. Su trabajo refleja una pasión genuina por el skincare. ¡Esperamos con ansias poder trabajar juntos en futuras oportunidades!\""
+  },
+  "contact":{
+    "title":"CREEMOS ALGO EXTRAORDINARIO",
+    "name_placeholder":"Nombre Completo",
+    "email_placeholder":"Correo Electrónico",
+    "company_placeholder":"Marca / Compañía",
+    "message_placeholder":"Tu mensaje...",
+    "send":"SEND INQUIRY",
+    "intro":"¿Listo para colaborar y llevar su marca a nuevas alturas en el mercado coreano y global? Comparta sus ideas. Estoy emocionado de explorar cómo Xavigil Film puede amplificar su visión con contenido cinematográfico y estrategias de influencer innovadoras.",
+    "social_text":"Conéctate conmigo:",
+    "final_phrase":"\"See you in Seoul! (Nos vemos en Seúl!)\""
+  },
+  "footer":{
+    "copyright":"© 2025 Xavigil Film. All rights reserved. Designed with K-Aesthetic."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "insights": "Insights",
+    "collaborate": "Collaborate"
+  },
+  "hero": {
+    "title": "XAVIGIL FILM",
+    "subtitle": "GLOBAL INFLUENCER • K-FASHION • TRAVEL KOREA • LIFESTYLE",
+    "cta": "Collaborate with me"
+  },
+  "section": {
+    "portfolio": {
+      "title": "MY WORK: WHERE STORIES UNFOLD"
+    },
+    "awards": {
+      "title": "🏅 INTERNATIONAL RECOGNITION & AWARDS"
+    }
+  },
+  "who":{
+    "title":"WHO IS XAVIGIL FILM?",
+    "p1":"Xavigil Film is more than a name; it’s a global narrative woven with the vibrant energy of South Korea. I’m Franco Gil, better known as Xavi or Xavier, an international influencer with an unwavering passion for connecting cultures through Korean fashion, travel, and lifestyle. From Seoul’s runways to the most authentic corners of its culture, my mission is to create content that not only inspires but builds bridges between visionary brands and a global audience captivated by the Hallyu wave.",
+    "p2":"With deep knowledge of the Korean market and a cinematic aesthetic sensibility, I transform stories into impactful visual experiences, collaborating with brands seeking authentic connections at the heart of Asia and beyond. Ready to tell your story?"
+  },
+  "brands":{
+    "title":"TRUSTED BY LEADING BRANDS",
+    "p":"For impactful collaborations across the Korean and global markets."
+  },
+  "portfolio":{
+    "description":"A curated selection of cinematic projects covering K-beauty, K-fashion, travel, and lifestyle.",
+    "kfashion": { "title":"K-FASHION PROJECTS" },
+    "kbeauty": { "title":"K-BEAUTY CAMPAIGNS" }
+  },
+  "awards":{
+    "lead":"My work as a K-Influencer and content creator has been recognized globally, highlighting cultural connection and excellence in producing Korea-focused content.",
+    "li1":"<strong>Minister of Culture, Sports and Tourism of Korea Award (2025):</strong> Awarded by the Ministry of Culture, Sports and Tourism of Korea",
+    "li2":"<strong>Best K-Influencer (2025):</strong> Awarded by the Ministry of Culture, Sports and Tourism of Korea",
+    "li3":"<strong>4th Place Talk Talk Korea Photobook Category (2025):</strong> Talk Talk Korea 2025 contest.",
+    "li4":"<strong>Semifinalist of the PEPERO AGENT:P Project (2025):</strong> Ambassador of Lotte Pepero's global brand project.",
+    "li5":"<strong>Best K-Influencer (2023):</strong> Awarded by the Korea Information and Culture Service (KOCIS).",
+    "li6":"<strong>4th Place Talk Talk Korea K-Fashion Category (2023):</strong> Talk Talk Korea 2023 contest.",
+    "li7":"<strong>Award Medal to Educators well received for the activities of the K-Influencer Academy (2022):</strong> Awarded by the K-Influencer Academy leadership.",
+    "final_note":"These recognitions drive me to keep building bridges between cultures through my projects.",
+    "caption":"Key moments from awards and events in South Korea."
+  },
+  "videos":{
+    "title":"MULTI-PLATFORM CREATOR",
+    "p":"Bringing stories to life across Instagram, TikTok, and YouTube."
+  },
+  "reels":{
+    "title":"VIRAL CONTENT SHOWCASE",
+    "p":"The latest in K-Fashion, K-Beauty and Travel, straight from my socials."
+  },
+  "insights":{
+    "title":"AUDIENCE INSIGHTS: CONNECTING GLOBALLY",
+    "p":"My community is the heart of Xavigil Film, strategically positioned to impact the Korean and global markets."
+  },
+  "services":{
+    "title":"SERVICES: ELEVATING YOUR BRAND STORY",
+    "p":"Beyond exposure, I deliver creative and strategic solutions designed to resonate with your target audience.",
+    "card1":{ "title":"UGC & Digital Campaigns", "p":"Authentic, high-impact user-generated content that drives engagement and conversions across platforms." },
+    "card2":{ "title":"K-Fashion & K-Beauty", "p":"From fashion editorials to skincare launches, with a distinctive touch and market understanding." },
+    "card3":{ "title":"Strategy & SEO", "p":"Audience analysis, market consulting, and YouTube SEO optimization to maximize visibility and reach." },
+    "card4":{ "title":"Cinematic Production", "p":"High-quality video and photography with a premium aesthetic, ideal for brand ambassadorships and launches." }
+  },
+  "testimonials":{
+    "title":"WHAT BRANDS SAY ABOUT XAVIGIL FILM",
+    "p1":"\"Working with Xavier Gil was a truly rewarding experience. His creativity and unique vision successfully presented the MIXSOON philosophy and our skincare products in an exceptional way. The content he created not only met but exceeded our expectations, showing his audience how to achieve the coveted 'glass skin' effect. We are delighted with the reception and the final result.\"",
+    "p2":"\"We deeply appreciate the collaboration with Xavier Gil. It was a pleasure working with him and we are very satisfied with the outcome. His work reflects a genuine passion for skincare. We look forward to future opportunities to work together!\""
+  },
+  "contact":{
+    "title":"LET'S CREATE SOMETHING EXTRAORDINARY",
+    "name_placeholder":"Full Name",
+    "email_placeholder":"Email Address",
+    "company_placeholder":"Brand / Company",
+    "message_placeholder":"Your message...",
+    "send":"SEND INQUIRY",
+    "intro":"Ready to collaborate and take your brand to new heights in the Korean and global markets? Share your ideas. I’m excited to explore how Xavigil Film can amplify your vision with cinematic content and innovative influencer strategies.",
+    "social_text":"Connect with me:",
+    "final_phrase":"\"See you in Seoul!\""
+  },
+  "footer":{
+    "copyright":"© 2025 Xavigil Film. All rights reserved. Designed with K-Aesthetic."
+  }
+}
+    
