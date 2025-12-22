@@ -491,15 +491,9 @@ button:hover, .btn-collaborate:hover {
 .vertical-reels-section {
   background-color: #000000;
   text-align: center;
-  /* Reduce spacing with previous section */
   padding-top: 20px;
   padding-bottom: 40px;
-}
-@media (max-width: 768px) {
-  .vertical-reels-section {
-    padding-top: 14px;
-    padding-bottom: 30px;
-  }
+  /* Contenedor del Carrusel Horizontal Infinito */
 }
 .vertical-reels-section h2 {
   font-size: 3.5em;
@@ -513,90 +507,88 @@ button:hover, .btn-collaborate:hover {
   }
 }
 .vertical-reels-section p {
-  font-size: 1.1em;
   color: #F0F0F0;
   margin-bottom: 60px;
 }
-.vertical-reels-section .reels-carousel-container {
-  height: 70vh; /* Altura vertical para el efecto Reel */
-  max-height: 700px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* Centrar el reel en el contenedor */
-  align-items: center;
-  overflow: hidden; /* Ocultar el scroll fuera del wrapper */
+.vertical-reels-section .marquee-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  overflow: hidden;
 }
-@media (max-width: 768px) {
-  .vertical-reels-section .reels-carousel-container {
-    height: 60vh;
-    max-height: 500px;
-  }
+.vertical-reels-section .marquee-wrapper:hover .reel-items-wrapper {
+  animation-play-state: paused;
 }
 .vertical-reels-section .reel-items-wrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 350px; /* Ancho típico de un teléfono (9:16) */
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  border-radius: 15px;
-  border: 4px solid #D62424; /* Marco premium */
-  box-shadow: 0 10px 30px rgba(214, 36, 36, 0.5);
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.vertical-reels-section .reel-items-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: flex;
+  gap: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  animation: marquee-infinite 40s linear infinite;
+  will-change: transform;
 }
 .vertical-reels-section .reel-item {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  width: 100%;
-  display: block;
+  width: clamp(220px, 18vw, 320px);
+  aspect-ratio: 9/16;
+  background-color: #0b0b0b;
+  border-radius: 18px;
   position: relative;
-  padding-top: 177.77%; /* (16/9) * 100 = 177.77% */
   overflow: hidden;
-  margin-bottom: 20px; /* Espacio entre items */
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease;
 }
-.vertical-reels-section .reel-item .reel-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
+@media (max-width: 768px) {
+  .vertical-reels-section .reel-item {
+    width: 180px;
+  }
 }
-.vertical-reels-section .reel-item img {
+.vertical-reels-section .reel-item:hover {
+  transform: scale(1.04) translateY(-5px);
+}
+.vertical-reels-section .reel-item:hover .reel-thumb {
+  filter: brightness(1);
+}
+.vertical-reels-section .reel-item:hover .play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.vertical-reels-section .reel-item .reel-thumb {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
 }
 .vertical-reels-section .reel-item .reel-overlay {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 15px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  z-index: 2;
+  text-align: left;
 }
 .vertical-reels-section .reel-item .reel-overlay h3 {
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
   color: #FFFFFF;
-  text-align: left;
 }
 .vertical-reels-section .reel-item .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8);
   color: #FFFFFF;
-  font-size: 3em;
-  opacity: 0.9;
+  font-size: 3rem;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 /* 4.1 LOGROS */
@@ -1109,80 +1101,6 @@ section#awards-recognition {
   }
 }
 
-/* ------------------- REELS / VERTICAL VIDEOS ------------------- */
-/* Diseñado para reels / tiktok / instagram vertical (aspect-ratio 9:16) */
-#reel-items-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  max-height: calc(100vh - 220px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#reel-items-wrapper .reel-item {
-  display: block;
-  width: clamp(280px, 36vw, 420px); /* responsive width */
-  cursor: pointer;
-  outline: none;
-}
-
-.reel-content {
-  width: 100%;
-  aspect-ratio: 9/16; /* mantiene proporción vertical típica de reels */
-  border-radius: 14px;
-  overflow: hidden;
-  background-color: #0b0b0b;
-  position: relative;
-}
-
-.reel-content img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; /* evita que el video se vea comprimido; rellena el contenedor */
-  -o-object-position: center center;
-     object-position: center center;
-  display: block;
-}
-
-.reel-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 12px 14px;
-  color: #FFFFFF;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-}
-
-.play-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-.reel-item:focus .reel-content,
-.reel-item:focus-visible .reel-content {
-  box-shadow: 0 6px 20px rgba(214, 36, 36, 0.18);
-  transform: translateY(-4px);
-}
-
-@media (max-width: 768px) {
-  #reel-items-wrapper {
-    gap: 14px;
-    padding: 14px;
-    max-height: calc(100vh - 160px);
-  }
-  #reel-items-wrapper .reel-item {
-    width: 92%;
-  }
-}
 /* ------------------- ANTI-COPY HELPERS ------------------- */
 /* Lightweight client-side protections. Owner can bypass by setting
    `localStorage.setItem('devMode','true')` in the console. */
@@ -1190,4 +1108,13 @@ section#awards-recognition {
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
   user-select: none !important;
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 20px / 2));
+  }
 }/*# sourceMappingURL=style.css.map */

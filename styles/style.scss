@@ -12,6 +12,12 @@ $font-headings: 'Montserrat', sans-serif;
 $transition-duration: 1.5s;
 $rotation-transition: background-image #{$transition-duration} ease-in-out;
 
+// Variables para el Carrusel Infinito
+$reel-width-desktop: clamp(220px, 18vw, 320px);
+$reel-width-mobile: 180px;
+$reel-gap: 20px;
+$marquee-speed: 40s;
+
 /* ========================================= */
 /* 2. MIXINS (REUSABLE STYLES)               */
 /* ========================================= */
@@ -552,123 +558,91 @@ button, .btn-collaborate {
 .vertical-reels-section {
     background-color: $color-black;
     text-align: center;
-    /* Reduce spacing with previous section */
     padding-top: 20px;
     padding-bottom: 40px;
-
-    @include respond-to(mobile) {
-      padding-top: 14px;
-      padding-bottom: 30px;
-    }
 
     h2 {
         font-size: 3.5em;
         margin-bottom: 20px;
         text-transform: uppercase;
         color: $color-red-deep;
-        @include respond-to(mobile) {
-            font-size: 2.5em;
-        }
+        @include respond-to(mobile) { font-size: 2.5em; }
     }
 
-    p {
-        font-size: 1.1em;
-        color: $color-grey-light;
-        margin-bottom: 60px;
-    }
+    p { color: $color-grey-light; margin-bottom: 60px; }
 
-    .reels-carousel-container {
-        // Contenedor principal para centrar el carrusel y establecer la altura
-        height: 70vh; /* Altura vertical para el efecto Reel */
-        max-height: 700px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center; /* Centrar el reel en el contenedor */
-        align-items: center;
-        overflow: hidden; /* Ocultar el scroll fuera del wrapper */
-        
-        @include respond-to(mobile) {
-            height: 60vh;
-            max-height: 500px;
+    /* Contenedor del Carrusel Horizontal Infinito */
+    .marquee-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+        // Efecto de desvanecido en los bordes (Efecto Sansa)
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        overflow: hidden;
+
+        &:hover .reel-items-wrapper {
+            animation-play-state: paused; // Se detiene al pasar el mouse
         }
     }
 
     .reel-items-wrapper {
-        // Wrapper donde ocurre el scroll vertical
-        width: 100%;
-        height: 100%;
-        max-width: 350px; /* Ancho típico de un teléfono (9:16) */
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        border-radius: 15px;
-        border: 4px solid $color-red-deep; /* Marco premium */
-        box-shadow: 0 10px 30px rgba($color-red-deep, 0.5);
-
-        // Ocultar la barra de desplazamiento (SCSS anidado para compatibilidad)
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        &::-webkit-scrollbar {
-            display: none; /* Chrome, Safari and Opera */
-        }
-        
-        // Estilo del scroll al final/inicio para detener
-        padding-top: 10px;
-        padding-bottom: 10px;
+        display: flex;
+        gap: $reel-gap;
+        width: max-content;
+        animation: marquee-infinite $marquee-speed linear infinite;
+        will-change: transform;
     }
 
     .reel-item {
-        scroll-snap-align: start;
-      scroll-snap-stop: always;
-        width: 100%;
-        display: block;
-        
-        // Aspect ratio 9:16
+        width: $reel-width-desktop;
+        aspect-ratio: 9 / 16;
+        background-color: #0b0b0b;
+        border-radius: 18px;
         position: relative;
-        padding-top: 177.77%; /* (16/9) * 100 = 177.77% */
         overflow: hidden;
-        margin-bottom: 20px; /* Espacio entre items */
+        flex-shrink: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        @include transition(transform, 0.4s, ease);
 
-        .reel-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
+        @include respond-to(mobile) { width: $reel-width-mobile; }
+
+        &:hover {
+            transform: scale(1.04) translateY(-5px);
+            .reel-thumb { filter: brightness(1); }
+            .play-icon { opacity: 1; transform: translate(-50%, -50%) scale(1); }
         }
 
-        img {
+        .reel-thumb {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            position: absolute;
-            top: 0;
+            filter: brightness(0.7);
+            @include transition(filter, 0.3s);
         }
 
         .reel-overlay {
             position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: flex-end;
-            padding: 20px;
-            background: linear-gradient(to top, rgba($color-black, 0.7) 0%, transparent 100%);
-
-            h3 {
-                font-size: 1.2em;
-                font-weight: 600;
-                color: $color-white;
-                text-align: left;
-            }
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 25px 15px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            z-index: 2;
+            text-align: left;
+            h3 { font-size: 1rem; font-weight: 500; margin: 0; color: $color-white; }
         }
 
         .play-icon {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) scale(0.8);
             color: $color-white;
-            font-size: 3em;
-            opacity: 0.9;
+            font-size: 3rem;
+            opacity: 0;
+            z-index: 2;
+            @include transition(all);
         }
     }
 }
@@ -1226,72 +1200,7 @@ section#awards-recognition {
   }
 }
 
-/* ------------------- REELS / VERTICAL VIDEOS ------------------- */
-/* Diseñado para reels / tiktok / instagram vertical (aspect-ratio 9:16) */
-#reel-items-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  max-height: calc(100vh - 220px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
 
-#reel-items-wrapper .reel-item {
-  display: block;
-  width: clamp(280px, 36vw, 420px); /* responsive width */
-  cursor: pointer;
-  outline: none;
-}
-
-.reel-content {
-  width: 100%;
-  aspect-ratio: 9 / 16; /* mantiene proporción vertical típica de reels */
-  border-radius: 14px;
-  overflow: hidden;
-  background-color: #0b0b0b;
-  position: relative;
-}
-
-.reel-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* evita que el video se vea comprimido; rellena el contenedor */
-  object-position: center center;
-  display: block;
-}
-
-.reel-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 12px 14px;
-  color: $color-white;
-  background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6));
-}
-
-.play-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.6rem;
-  color: rgba(255,255,255,0.95);
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-}
-
-.reel-item:focus .reel-content,
-.reel-item:focus-visible .reel-content {
-  box-shadow: 0 6px 20px rgba($color-red-deep, 0.18);
-  transform: translateY(-4px);
-}
-
-@include respond-to(mobile) {
-  #reel-items-wrapper { gap: 14px; padding: 14px; max-height: calc(100vh - 160px); }
-  #reel-items-wrapper .reel-item { width: 92%; }
-}
 
 /* ------------------- ANTI-COPY HELPERS ------------------- */
 /* Lightweight client-side protections. Owner can bypass by setting
@@ -1301,4 +1210,10 @@ section#awards-recognition {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important;
+}
+
+@keyframes marquee-infinite {
+    0% { transform: translateX(0); }
+    // El calc(-50%) es vital para que el loop sea perfecto al duplicar los items con JS
+    100% { transform: translateX(calc(-50% - (#{$reel-gap} / 2))); }
 }
