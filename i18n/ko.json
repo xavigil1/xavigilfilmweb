@@ -56,6 +56,15 @@
     "title":"오디언스 인사이트: 글로벌 연결",
     "p":"제 커뮤니티는 Xavigil Film의 핵심이며, 한국 및 글로벌 시장에 영향력을 행사하도록 전략적으로 위치해 있습니다."
   },
+  "socialEngagement":{
+    "label":"플랫폼별 참여율",
+    "title":"플랫폼별 참여율",
+    "description":"Instagram에서 YouTube까지 주요 소셜 채널의 실제 가치를 반영합니다.",
+    "instagram":{"title":"Instagram","description":"프리미엄 노출과 시각적 연결.","followers":"팔로워","likes":"평균 좋아요","impressions":"평균 노출"},
+    "tiktok":{"title":"TikTok","description":"짧은 형식에서 역동적인 임팩트.","followers":"팔로워","likes":"평균 좋아요","impressions":"평균 노출"},
+    "youtube":{"title":"YouTube","description":"장기 콘텐츠 참여율.","subscribers":"구독자","views":"평균 조회수","likes":"평균 좋아요"},
+    "final_note":"이 패널은 각 소셜 채널이 실질적인 결과를 어떻게 이끄는지 보여줍니다."
+  },
   "services":{
     "title":"서비스: 브랜드 스토리 강화",
     "p":"노출을 넘어, 타깃 오디언스에 공감할 수 있는 창의적이고 전략적인 솔루션을 제공합니다.",

@@ -935,6 +935,167 @@ button, .btn-collaborate {
   }
 }
 
+.social-engagement-section {
+  background: linear-gradient(180deg, rgba($color-black, 0.98), rgba($color-grey-smoke, 0.03));
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $color-red-deep;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @include respond-to(mobile) { font-size: 2.5em; }
+  }
+
+  > p {
+    font-size: 1.1em;
+    color: $color-grey-light;
+    max-width: 760px;
+    margin-bottom: 55px;
+  }
+
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+
+    @include respond-to(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .platform-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .platform-card {
+    background: rgba($color-white, 0.04);
+    border: 1px solid rgba($color-white, 0.08);
+    border-radius: 26px;
+    padding: 32px;
+    box-shadow: 0 20px 45px rgba($color-black, 0.35);
+    @include transitions((transform box-shadow background-color), 0.35s, ease);
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 55px rgba($color-black, 0.4);
+      background: rgba($color-black, 0.6);
+    }
+  }
+
+  .platform-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+
+    .platform-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      font-size: 1.45rem;
+      color: $color-white;
+      background: rgba($color-white, 0.08);
+      box-shadow: inset 0 0 0 1px rgba($color-white, 0.06);
+    }
+
+    .platform-icon.instagram { background: linear-gradient(135deg, #feda75, #d62976 60%); }
+    .platform-icon.tiktok { background: linear-gradient(135deg, #69c9d0, #ee1d52 60%); }
+    .platform-icon.youtube { background: linear-gradient(135deg, #ff0000, #c4302b 60%); }
+  }
+
+  h3 {
+    font-size: 1.8em;
+    margin-bottom: 6px;
+    color: $color-white;
+  }
+
+  p {
+    font-size: 0.98em;
+    color: $color-grey-light;
+  }
+
+  .platform-metric {
+    font-family: $font-headings;
+    font-size: 4rem;
+    font-weight: 900;
+    color: $color-red-deep;
+    margin: 24px 0 18px 0;
+    letter-spacing: -0.03em;
+  }
+
+  .platform-bar {
+    width: 100%;
+    height: 14px;
+    border-radius: 999px;
+    background: rgba($color-white, 0.08);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .bar-fill {
+    width: var(--fill, 0%);
+    height: 100%;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: bar-fill 1.4s ease forwards;
+    box-shadow: 0 8px 20px rgba($color-red-deep, 0.18);
+  }
+
+  .bar-fill.instagram { background: linear-gradient(90deg, #feda75, #d62976); }
+  .bar-fill.tiktok { background: linear-gradient(90deg, #69c9d0, #ee1d52); }
+  .bar-fill.youtube { background: linear-gradient(90deg, #ff0000, #c4302b); }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    color: $color-grey-light;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 1em;
+
+      strong { color: $color-white; font-weight: 600; }
+    }
+  }
+
+  .engagement-note {
+    font-size: 1.05em;
+    line-height: 1.8;
+    color: $color-grey-light;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@keyframes bar-fill {
+  to { transform: scaleX(1); }
+}
+
 /* 7. SERVICES */
 .services-section {
   background-color: $color-grey-smoke;

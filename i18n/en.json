@@ -56,6 +56,15 @@
     "title":"AUDIENCE INSIGHTS: CONNECTING GLOBALLY",
     "p":"My community is the heart of Xavigil Film, strategically positioned to impact the Korean and global markets."
   },
+  "socialEngagement":{
+    "label":"ENGAGEMENT BY PLATFORM",
+    "title":"Engagement rate per platform",
+    "description":"This section reflects the true value of each main social channel, from Instagram to YouTube.",
+    "instagram":{"title":"Instagram","description":"Visual connection with premium reach.","followers":"Followers","likes":"Avg. Likes","impressions":"Avg. Impressions"},
+    "tiktok":{"title":"TikTok","description":"Dynamic impact in short-form content.","followers":"Followers","likes":"Avg. Likes","impressions":"Avg. Impressions"},
+    "youtube":{"title":"YouTube","description":"Engagement for long-form content.","subscribers":"Subscribers","views":"Avg. Views","likes":"Avg. Likes"},
+    "final_note":"This panel uses key metrics to show how each social channel drives real results, matching the clarity of a professional performance calculator."
+  },
   "services":{
     "title":"SERVICES: ELEVATING YOUR BRAND STORY",
     "p":"Beyond exposure, I deliver creative and strategic solutions designed to resonate with your target audience.",
