@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const reelData = [
         {
-            title: "¿Ajo para el Acné? 🧄👀",
+            title: "VT COSMETICS",
             platform: "instagram",
             icon: "fab fa-instagram",
             link: "https://www.instagram.com/reel/DM_sJwuulJq/",
             thumb: "./images/IG1.jpg"
         },
         {
-            title: "PIEZAS SIMPLES hacen GRANDES ESTILOS",
+            title: "FASHION INSPO",
             platform: "tiktok",
             icon: "fab fa-tiktok",
             link: "https://www.tiktok.com/@xaviergil.fc/video/7578566621082553611",
             thumb: "./images/TK1.png"
         },
         {
-            title: "¿Que harías en una noche en Corea del Sur? 🇰🇷🌃",
+            title: "TRAVEL VLOGS 🇰🇷🌃",
             platform: "youtube",
             icon: "fab fa-youtube",
             link: "https://www.youtube.com/shorts/fi8vxSwEuf4",
@@ -23,28 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         // Añade más objetos aquí...
         {
-            title: "Hora de BOUNCY ATEEZ DANCE COVER 🔥🇰🇷",
+            title: "KPOP DANCE COVER",
             platform: "instagram",
             icon: "fab fa-instagram",
             link: "https://www.instagram.com/reel/DR-y1rSAZM4/",
             thumb: "./images/IG2.jpg"
         },
         {
-            title: "Visitando Miniso en Venezuela",
+            title: "MINISO VZLA",
             platform: "tiktok",
             icon: "fab fa-tiktok",
             link: "https://www.tiktok.com/@xaviergil.fc/video/7531916085172456709",
             thumb: "./images/TK2.png"
         },
         {
-            title: "4 K-dramas Clasicos que debes ver 🇰🇷❤️",
+            title: "KDRAMAS",
             platform: "youtube",
             icon: "fab fa-youtube",
             link: "https://www.youtube.com/shorts/9qRTQ8bpEn8",
             thumb: "./images/YT2.jpg"
         },
         {
-            title: "Rutina de skincare express con Mixsoon",
+            title: "MIXSOON",
             platform: "instagram",
             icon: "fab fa-instagram",
             link: "https://www.instagram.com/reel/DKgVhiftimR/",
